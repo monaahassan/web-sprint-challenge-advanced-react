@@ -22,12 +22,12 @@ test("form shows success message on submit with form details", async () => {
   const zip = screen.getByLabelText(/zip/i);
   const submit = screen.getByRole("button");
 
-  fireEvent.change(firstName, {target: {value: "Alice"}});
-  fireEvent.change(lastName, {target: {value: "Chang"}});
-  fireEvent.change(address, {target: {value: "30th Street"}});
-  fireEvent.change(city, {target: {value: "Brooklyn"}});
-  fireEvent.change(state, {target: {value: "CA"}});
-  fireEvent.change(zip, {target: {value: "11232"}});
+  fireEvent.change(firstName, {target: {value: "Mona"}});
+  fireEvent.change(lastName, {target: {value: "Hassan"}});
+  fireEvent.change(address, {target: {value: "36th Street"}});
+  fireEvent.change(city, {target: {value: "Moorhead"}});
+  fireEvent.change(state, {target: {value: "MN"}});
+  fireEvent.change(zip, {target: {value: "56560"}});
 
   await waitFor(() => {
     fireEvent.click(submit)
